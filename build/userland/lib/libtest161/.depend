@@ -1,0 +1,63 @@
+$(MYBUILDDIR)/secure.o: \
+ ../../../common/libtest161/secure.c \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/sys/cdefs.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/time.h \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/kern/secure.h \
+ ../../../common/libtest161/sha256.h \
+ ../../../common/libtest161/config.h \
+ $(INSTALLTOP)/include/stdint.h
+$(MYBUILDDIR)/sha256.o: \
+ ../../../common/libtest161/sha256.c \
+ ../../../common/libtest161/config.h \
+ ../../../common/libtest161/sha256.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/stdint.h \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/sys/null.h
+$(MYBUILDDIR)/test161.o: \
+ ../../../common/libtest161/test161.c \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/stdarg.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/sys/cdefs.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/test161/test161.h \
+ $(INSTALLTOP)/include/kern/test161.h \
+ $(INSTALLTOP)/include/kern/secret.h \
+ $(INSTALLTOP)/include/test161/secure.h \
+ $(INSTALLTOP)/include/kern/secure.h
